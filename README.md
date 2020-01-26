@@ -33,7 +33,7 @@ GIF created with [Recordit](recordit.co).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Figuring out how to set view constraints was the most challenging part.
 
 ## License
 
