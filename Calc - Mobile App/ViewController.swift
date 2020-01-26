@@ -90,15 +90,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let start = defaults.object(forKey: "startTime") as? NSDate
         if (start != nil) {
-            let billAmt = defaults.string(forKey: "billAmount")
             let currString = defaults.string(forKey: "currString")
             let elapsed = NSDate().timeIntervalSince(start as! Date)
             if elapsed <= 600 {
                 currentString = currString!
-                billField.text = billAmt
+                billField.text = formatCurrency(currentString)
             } else {
                 defaults.removeObject(forKey:"startTime")
-                defaults.removeObject(forKey:"billAmount")
+                defaults.removeObject(forKey:"currString")
             }
         }
         // Do any additional setup after loading the view, typically from a nib.
@@ -111,7 +110,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func saveData(_ sender: Any) {
         defaults.set(currentString, forKey: "currString")
-        defaults.set(billField.text!, forKey: "billAmount")
         defaults.set(NSDate(), forKey: "startTime")
         defaults.synchronize()
     }
