@@ -14,6 +14,9 @@
 		AE7F58D323D2127D00952184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7F58D123D2127D00952184 /* LaunchScreen.storyboard */; };
 		AE7F58DE23D2127D00952184 /* Calc___Mobile_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F58DD23D2127D00952184 /* Calc___Mobile_AppTests.swift */; };
 		AE7F58E923D2127E00952184 /* Calc___Mobile_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F58E823D2127E00952184 /* Calc___Mobile_AppUITests.swift */; };
+		AEACEA7223D4293B0006BFCB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEACEA7123D4293B0006BFCB /* SettingsViewController.swift */; };
+		AEACEA7423D5B0F10006BFCB /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEACEA7323D5B0F10006BFCB /* ColorScheme.swift */; };
+		AEACEA7623D704B60006BFCB /* icons8-gear-16.png in Resources */ = {isa = PBXBuildFile; fileRef = AEACEA7523D704B60006BFCB /* icons8-gear-16.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		AE7F58E423D2127E00952184 /* Calc - Mobile AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calc - Mobile AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7F58E823D2127E00952184 /* Calc___Mobile_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calc___Mobile_AppUITests.swift"; sourceTree = "<group>"; };
 		AE7F58EA23D2127E00952184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEACEA7123D4293B0006BFCB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AEACEA7323D5B0F10006BFCB /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		AEACEA7523D704B60006BFCB /* icons8-gear-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-gear-16.png"; path = "../../../Desktop/icons8-gear-16.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				AE7F58C823D2127D00952184 /* AppDelegate.swift */,
 				AE7F58CA23D2127D00952184 /* ViewController.swift */,
+				AEACEA7123D4293B0006BFCB /* SettingsViewController.swift */,
+				AEACEA7323D5B0F10006BFCB /* ColorScheme.swift */,
 				AE7F58CC23D2127D00952184 /* Main.storyboard */,
 				AE7F58CF23D2127D00952184 /* Assets.xcassets */,
 				AE7F58D123D2127D00952184 /* LaunchScreen.storyboard */,
 				AE7F58D423D2127D00952184 /* Info.plist */,
+				AEACEA7523D704B60006BFCB /* icons8-gear-16.png */,
 			);
 			path = "Calc - Mobile App";
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE7F58D323D2127D00952184 /* LaunchScreen.storyboard in Resources */,
+				AEACEA7623D704B60006BFCB /* icons8-gear-16.png in Resources */,
 				AE7F58D023D2127D00952184 /* Assets.xcassets in Resources */,
 				AE7F58CE23D2127D00952184 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEACEA7423D5B0F10006BFCB /* ColorScheme.swift in Sources */,
 				AE7F58CB23D2127D00952184 /* ViewController.swift in Sources */,
 				AE7F58C923D2127D00952184 /* AppDelegate.swift in Sources */,
+				AEACEA7223D4293B0006BFCB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				AE7F58EF23D2127E00952184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE7F58F023D2127E00952184 /* Build configuration list for PBXNativeTarget "Calc - Mobile AppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				AE7F58F223D2127E00952184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE7F58F323D2127E00952184 /* Build configuration list for PBXNativeTarget "Calc - Mobile AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				AE7F58F523D2127E00952184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
